@@ -1,5 +1,4 @@
 .image {
-	position: relative;
 	height: 100%;
 }
 
@@ -22,6 +21,12 @@
 .bottomText {
 	position: absolute;
 	bottom: 0;
+}
+
+.delete {
+	position: absolute;
+	top: 50;
+	right: 50;
 }
 
 img {
