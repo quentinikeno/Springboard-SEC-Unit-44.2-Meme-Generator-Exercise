@@ -1,0 +1,26 @@
+.image {
+	position: relative;
+}
+
+.topText,
+.bottomText {
+	position: absolute;
+	z-index: 1;
+	color: white;
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+}
+
+.topText {
+	top: 5;
+}
+
+.bottomText {
+	bottom: 5;
+}
+
+img {
+	z-index: 0;
+}
