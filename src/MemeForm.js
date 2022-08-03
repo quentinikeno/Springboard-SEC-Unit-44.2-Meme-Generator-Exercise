@@ -18,7 +18,7 @@ const MemeForm = () => {
 	};
 
 	return (
-		<form className="field" onSubmit={handleSubmit}>
+		<form className="field my-4 p-3" onSubmit={handleSubmit}>
 			<div className="field">
 				<label className="label" htmlFor="imgURL">
 					Image URL
@@ -29,7 +29,7 @@ const MemeForm = () => {
 						type="url"
 						name="imgURL"
 						id="imgURL"
-						value={formData.imgUrl}
+						value={formData.imgURL}
 						placeholder="What's the URL of your meme image?"
 						onChange={handleChange}
 						required
