@@ -4,8 +4,8 @@ export const memesSlice = createSlice({
 	name: "memes",
 	initialState: [],
 	reducers: {
-		add: (state) => {
-			[...state, action.payload];
+		add: (state, action) => {
+			return [...state, action.payload];
 		},
 	},
 });
