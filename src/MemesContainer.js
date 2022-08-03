@@ -7,7 +7,7 @@ const MemesContainer = () => {
 	return (
 		<div className="columns is-desktop is-multiline">
 			{memes.map((meme) => (
-				<Meme meme={meme} />
+				<Meme meme={meme} key={meme.id} />
 			))}
 		</div>
 	);
