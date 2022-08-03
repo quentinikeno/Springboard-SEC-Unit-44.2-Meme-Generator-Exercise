@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { add } from "./features/memesSlice";
+import { v4 as uuid } from "uuid";
 
 const MemeForm = () => {
 	const initialState = { imgURL: "", topText: "", bottomText: "" };
@@ -13,7 +14,7 @@ const MemeForm = () => {
 	};
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		dispatch(add(formData));
+		dispatch(add({ ...formData, id: uuid() }));
 		setFormData(() => initialState);
 	};
 
