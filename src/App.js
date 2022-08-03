@@ -1,23 +1,20 @@
-import logo from "./logo.svg";
+import MemesContainer from "./MemesContainer";
 import "./App.css";
+import MemeForm from "./MemeForm";
 
 function App() {
 	return (
 		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
-			</header>
+			<section class="hero is-primary">
+				<div class="hero-body">
+					<h1 class="title">Meme Generator</h1>
+					<p class="subtitle">Now with Redux!</p>
+				</div>
+			</section>
+			<div className="container">
+				<MemeForm />
+				<MemesContainer />
+			</div>
 		</div>
 	);
 }
